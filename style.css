@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff8ed;
+    color: #402313;
+}
+
+header {
+    background: #542b16;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 span {
+    color: #ffca67;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffca67;
+}
+
+.hero {
+    height: 500px;
+    background:
+    linear-gradient(#0007, #0008),
+    url("https://images.unsplash.com/photo-1509440159596-0249088772ff")
+    center/cover;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.hero-content span {
+    color: #ffca67;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #e99a35;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #542b16;
+}
+
+.about {
+    text-align: center;
+    padding: 65px 10%;
+}
+
+.about h1,
+.menu h1,
+.contact h1 {
+    color: #a64d19;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.menu {
+    padding: 60px 7%;
+    text-align: center;
+    background: #fff0d9;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #0002;
+    transition: 0.4s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px #0003;
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.food-card h2 {
+    color: #a64d19;
+    margin: 15px;
+}
+
+.food-card p {
+    padding-bottom: 20px;
+}
+
+.contact {
+    text-align: center;
+    padding: 65px 10%;
+    line-height: 2;
+}
+
+footer {
+    background: #542b16;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+}
